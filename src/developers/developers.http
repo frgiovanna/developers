@@ -1,0 +1,26 @@
+### LIST DEVELOPERS 
+GET http://localhost:3000/developers
+
+### GET DEVELOPER 
+GET http://localhost:3000/developers/dev_cmnINti20f8PUZ-Otd6Sf
+
+### CREATE DEVELOPER 
+POST http://localhost:3000/developers
+Content-Type: application/json
+
+{
+    "email": "breno@breno.com",
+    "name": "Breno",
+    "birthday": "1999-10-01"
+}
+
+### UPDATE DEVELOPERS 
+PATCH http://localhost:3000/developers/dev_cmnINti20f8PUZ-Otd6Sf
+Content-Type: application/json
+
+{
+    "email": "bruna.bru@bruna.com"
+}
+
+### DELETE DEVELOPERS 
+DELETE http://localhost:3000/developers/dev_cmnINti20f8PUZ-Otd6Sf
